@@ -31,6 +31,40 @@ gem 'jbuilder', '~> 2.5'
 #Manage the application.yml file
 gem 'figaro'
 
+#Bootstrap integration
+gem "twitter-bootstrap-rails"
+# Bootstrap generator
+gem 'bootstrap-sass-extras'
+
+#client library to absolutely positioned elements attach to elements in the page efficiently.
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
+
+# Font awasome Icons
+gem "font-awesome-rails"
+gem 'font-awesome-sass'
+
+# bootstrap datetimepicker
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'
+
+# User Authentication
+gem 'devise'
+# Styled devise views
+gem 'devise-bootstrap-views'
+#Pretty alerts
+gem 'toastr-rails'
+
+# User Roles
+gem 'rolify'
+
+# Administration dasboard
+gem 'rails_admin', '~> 1.2'
+# User permisions
+gem 'cancancan'
+
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
