@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
         #_path
         root_path
       elsif resource.has_role? :RegularUser
-        basic_welcome_path
+        home_welcome_path
       else
         root_path
       end
