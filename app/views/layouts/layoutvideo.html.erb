@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetPark - Manizales</title>
+  <meta name="description" content="Full screen background video demo">
+  <meta name="Ivan Martinez C" description="Call Me Vanmartc">
+
+  <%= stylesheet_link_tag    'layoutvideo', media: 'all', 'data-turbolinks-track' => true ,'data-turbolinks-track': 'reload' %>
+
+
+  <%= javascript_include_tag 'layoutvideo', 'data-turbolinks-track' => true, 'data-turbolinks-track': 'reload' %>
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+
+</head>
+  <body class="margin-bottom-footer">
+
+    <video id="my-video" class="video" muted="" loop="" poster="<%= image_url("parking2.jpg") %>">
+      <source src="<%= video_path("parkingfull.webm")%>" type="video/webm">
+    </video><!-- /video -->
+    <div class="content ">
+      <h1 class="content__heading" style="color: white"><strong style="color: yellow">P</strong>arqueaderos</h1>
+
+          <%= bootstrap_flash %>
+          <% unless flash.empty? %>
+            <script type="text/javascript">
+              <% flash.each do |f| %>
+                <% type = f[0].to_s.gsub('alert', 'error').gsub('notice', 'info') %>
+                toastr['<%= type %>']('<%= f[1] %>');
+              <% end %>
+            </script>
+          <% end %>
+
+      <%= yield %>
+
+
+
+      <footer id="footer" class="navbar-fixed-bottom">
+            <p style="color:white; margin-bottom: 0px;">
+              Vanmartc Developments 2017 &copy;. All rights reserved &#174;.
+            </p>
+      </footer>
+
+    </div><!-- /content -->
+
+  <script>
+  (function() {
+    /**
+     * Video element
+     * @type {HTMLElement}
+     */
+    var video = document.getElementById("my-video");
+
+    /**
+     * Check if video can play, and play it
+     */
+    video.addEventListener( "canplay", function() {
+      video.play();
+    });
+  })();
+  </script>
+  </body>
+</html>

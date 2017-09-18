@@ -1,0 +1,14 @@
+/* Set the fixed height of the footer here */
+
+
+#footer {
+    position: fixed;
+    height: 33px;
+    bottom: 0;
+    width: 100%;
+    background-color: none;
+}
+
+.margin-bottom-footer{
+  margin-bottom: 85px;
+}
