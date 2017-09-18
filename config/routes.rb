@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :parkings
   mount RailsAdmin::Engine => '/dashboard', as: 'rails_admin'
   devise_for :users
   root to: "home#landing"
