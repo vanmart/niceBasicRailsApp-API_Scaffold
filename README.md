@@ -24,15 +24,31 @@ Things you may want to cover:
   
 # Pre configured Services
 
-*Figaro: secret file for usernames, API credentials, passwords, etc.
-*Bootstrap: for responsive design.
-*Devise:for user authentication.
+*Figaro:
+Secret file for usernames, API credentials, passwords, etc
 
-  *Devise-bootstrap-views:  for pretty devise bootstrap views
-  *Toastr:                  for nice alerts
-  *FontAwasome:             nice icons
-  *Rolify:                  for roles managment user can have one or many roles
-  *RailsAdmin:              for adminstration dashboard localhost:3000/dashboard  only MasterAdmin role can acces
-  *Cancancan:               for user permission or application access
+*Bootstrap: 
+For responsive design
+
+*Devise:
+For user authentication
+
+*Devise-bootstrap-views:
+For pretty devise bootstrap views
+
+*Toastr:
+For nice alerts
+
+*FontAwasome:
+Nice icons
+
+*Rolify:
+For roles managment user can have one or many roles
+
+*RailsAdmin:
+For adminstration dashboard localhost:3000/dashboard  only MasterAdmin role can acces
+
+*Cancancan:
+For user permission or application access
   
-  enjoy.
+enjoy.
