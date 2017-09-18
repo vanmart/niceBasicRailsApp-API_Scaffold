@@ -8,6 +8,7 @@ class User < ApplicationRecord
   after_create :assign_default_role
 
   has_many :users_by_parkings
+  has_many :parkings, through: :users_by_parkings
   has_one :parking
 
   before_save { email.downcase! }
@@ -16,11 +17,11 @@ class User < ApplicationRecord
   validates :name, presence: true,
                     format: { with: /\A\S[a-z ñ A-Z Ñ\s]*\S\z/ }
   validates :last_name, presence: true,
-                    format: { with: /\A\S[a-z A-Z\s]*\S\z/ }
+                    format: { with: /\A\S[a-z ñ A-Z Ñ\s]*\S\z/ }
   validates :address, presence: true
 
   validates :document, presence: true,
-                    :numericality => {:only_integer => true}
+                    :numericality => {:only_integer => true},uniqueness: { case_sensitive: false }
   validates :phone, presence: true,
                     :numericality => {:only_integer => true}
   validates :email, presence: true,
