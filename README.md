@@ -24,8 +24,10 @@ Things you may want to cover:
   
 # Pre configured Services
 
-  *Figaro:                  secret file for usernames, API credentials, passwords, etc.
-  *Bootstrap:               for responsive design
+*Figaro:
+  secret file for usernames, API credentials, passwords, etc.
+*Bootstrap:
+  for responsive design
   *Devise:                  for user authentication
   *Devise-bootstrap-views:  for pretty devise bootstrap views
   *Toastr:                  for nice alerts
