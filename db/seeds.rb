@@ -9,6 +9,11 @@
 Role.create([{ name: 'Admin' }, { name: 'MasterAdmin' }, { name: 'RegularUser' }, { name: 'wherever' }])
 
 masterAdmin = User.create({
+              name: 'van',
+              last_name: 'martc',
+              document: '123321',
+              phone: '555',
+              address: 'cra 555',
               email: 'vansteradmin@mail.com',
               password: '1234321',
               roles: [Role.find_by_name('MasterAdmin')]
