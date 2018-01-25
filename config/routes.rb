@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   resources :parkings
   mount RailsAdmin::Engine => '/dashboard', as: 'rails_admin'
+  mount APINAME::Root => '/apiname'
+
+
   devise_for :users
   root to: "home#landing"
 
