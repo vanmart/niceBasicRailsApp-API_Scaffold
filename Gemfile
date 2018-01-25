@@ -73,6 +73,12 @@ gem 'cancancan'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# API authentication
+gem 'doorkeeper'
+gem 'doorkeeper-i18n'
+gem 'rack-oauth2'
+
+
 # API
 group :api do
   gem 'grape'

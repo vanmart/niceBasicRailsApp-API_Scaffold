@@ -28,3 +28,5 @@ module Parkings
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+require "#{Rails.root}/lib/warden_strategies"
