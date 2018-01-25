@@ -21,6 +21,24 @@ video {
 html,
 body {
   height: 100%;
+  background-image: url(image-path('backg1.png'));
+}
+
+.vehicle-icon {
+  width: 30px;
+  margin: 5px
+}
+
+.red-text{
+  color: red;
+}
+
+.green-text{
+  color: green;
+}
+
+.btnService {
+    margin-bottom: 0px !important;
 }
 
 body {
@@ -28,17 +46,71 @@ body {
   font-family: "Oxygen", sans-serif;
   line-height: 1.5;
 }
+th{
+  color: white;
+}
+
+.yellow-link{
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.yellow-link:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.white-link{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.white-link:hover{
+  color: yellow;
+  text-decoration: none;
+}
+
+
+.yellow{
+  color: #ffffff;
+  border: 2px solid rgb(253, 240, 45);
+  background: none;
+}
+
+.padding-modal {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.yellow:hover{
+  border: 2px solid #fff;
+  color: yellow;
+  background: none;
+}
+
+.landing-icon{
+  width: 10%;
+}
+
+.datatables-wrap{
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  width: 100% !important;
+}
+
 
 /* =============================================================================
   CONTENT
 ============================================================================= */
+
 .content {
   position: relative;
-  top: 10%;
+  top: 2%;
   z-index: 2;
   margin: 0 auto;
-  max-width: 80%;
-  text-align: center;
+  max-width: 90%;
+
 }
 
 .content__heading {
@@ -81,12 +153,12 @@ body {
   padding: 12px 48px;
   border: solid 4px #fff;
   color: yellow;
-  font-size: 22px;
+  font-size: 20px;
   text-decoration: none;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
   background: none;
-  border-radius: 15px 50px;
-  margin-top: 10%;
+  border-radius: 50px 15px;
+  margin-top: 2%;
 }
 
 .content__wy:hover {
@@ -96,12 +168,12 @@ body {
   padding: 12px 48px;
   border: solid 4px yellow;
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   text-decoration: none;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
   background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 15px 50px;
-  margin-top: 10%;
+  border-radius: 50px 15px;
+  margin-top: 2%;
 }
 
 .content__yw {
@@ -110,10 +182,10 @@ body {
   margin: 0;
   padding: 12px 48px;
   color: yellow;
-  font-size: 22px;
+  font-size: 20px;
   text-decoration: none;
   border: solid 4px #fff;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
   background: none;
 }
 
@@ -123,17 +195,10 @@ body {
   margin: 0;
   padding: 12px 48px;
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   text-decoration: none;
   border: solid 4px yellow;
-  margin-bottom: 3%;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.forms__border{
-  border: 2px solid yellow;
-  border-radius: 15px 50px;
-  padding: 2%;
+  margin-bottom: 2%;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -143,30 +208,155 @@ body {
   margin: 0;
   padding: 10px;
   color: yellow;
-  font-size: 22px;
+  font-size: 20px;
   text-decoration: none;
-  border: solid 2px #fff;
+  border: solid 3px #fff;
   margin-bottom: 3%;
   background: none;
   border-radius: 10px;
+  border-radius: 50px 15px;
+}
+
+/* =============================================================================
+  VARIOS
+============================================================================= */
+
+.form__border{
+  border: 2px solid yellow;
+  border-radius: 50px 15px;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .login__button:hover {
-  display: inline-block;
-  width: 100%;
-  margin: 0;
-  padding: 10px;
-  color: yellow;
-  font-size: 22px;
+  color: white;
+  font-size: 20px;
+  border: solid 3px yellow;
   text-decoration: none;
-  border: solid 2px #fff;
-  margin-bottom: 3%;
-  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.ticket-input-size{
+  font-size: 23px;
+  height: 60px;
+}
+
+.logo-infowindow{
+  width: 25%;
+}
+
+/* =============================================================================
+  Attendant Index Buttons
+============================================================================= */
+
+.enter__button {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 12px 35px;
+  border: solid 4px #fff;
+  color: yellow;
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 2%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px 15px;
+  margin-top: 10%;
+}
+
+.enter__button:hover {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 12px 35px;
+  border: solid 4px yellow;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 2%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50px 15px;
+  margin-top: 10%;
+}
+
+.help-inline{
+  color: red ;
+  text-shadow:  2px 2px 8px #FF0000;
+}
+
+.dropdown-menu{
+  background-color: #E1E1E1;
+}
+
+.text-muted {
+    color: #DADBD4;
+}
+
+.interactor-bar{
+  text-align: none !important;
+}
+
+.form__label{
+  padding-left: 15px;
+  color: white;
+  float: left;
+}
 
 
+.brand{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 0px !important;
+}
+
+.brand__border{
+  border: 2px solid yellow;
+  float: left;
+  border-radius: 14px 4px;
+  margin-left: 0px !important;
+  padding: 3px 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: -5px 0px;
+}
+
+.padding_navbar{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.dataTables_info{
+  color: white !important;
+}
+
+.dataTables_length label{
+  color: #B8D209;
+}
+.dataTables_length label select{
+  color: black;
+}
+
+.dataTables_filter label{
+  color: #B8D209;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 25px;
+}
+
+.jumbotron h1, .jumbotron .h1 {
+  font-size: 25px;
+}
+.datatable{
+  width: 100% !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.backg {
+    width: 100% !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
 
 /* =============================================================================
   VIDEO
@@ -186,59 +376,293 @@ body {
 }
 
 
+.small-brand-text{
+  color: white;
+  font-size: 13px;
+  margin-left: 3px;
+  text-shadow: 0px 0px 3px rgb(0, 0, 0), 0px 0px 5px rgb(255, 255, 255);
+}
+
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  margin-left: 0.5em;
+  color:black;
+}
+
+.child:hover{
+  background-color: white;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #000;
+}
+
+.modal-dialog{
+  margin-top: 70px;
+}
+
+.btn-lg{
+  margin-bottom: 10px
+}
+
+.value{
+  font-size: 40px;
+}
+
+.map_dimensions{
+  width: 100%;
+  height: 400px;
+}
+
+.backg{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.landing-msg{
+  font-size: 14px;
+}
+
+.js_enabled #cookie-message {
+    display: none;
+}
+
+
+#overbox3 {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999999;
+    display: block;
+    pading: 50px;
+}
+#infobox3 {
+    margin: auto;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    text-align:center;
+    background-color: #eeeeee;
+}
+#infobox3 p {
+    font-size:12px;
+    padding: 4px 7px 0px 7px;
+}
+#infobox3 p a {
+    margin-right:5px;
+    text-decoration: underline;
+}
+
+.pull-btn{
+  text-align: right;
+}
+
+
 
 /* =============================================================================
   Resolutions control
 ============================================================================= */
 
     /* different techniques for iPad screening */
-    @media only screen and (min-width: 250px) and (max-width: 359px) {
+    @media only screen and (min-width: 0px) and (max-width: 359px) {
       /* For portrait layouts only */
+      .content{
+        top: -3%
+      }
+
+      .pull-btn{
+        text-align: center;
+      }
+
+      .landing-msg{
+        font-size: 12px;
+      }
+
+      .landing-icon{
+        width: 25%;
+      }
+      .content__wy {
+        padding: 12px 30px;
+        font-size: 16px;
+        margin-top: 2%;
+      }
+
+      .content__wy:hover {
+        padding: 12px 30px;
+        color: #fff;
+        font-size: 16px;
+        margin-top: 2%;
+      }
+
+      .enter__button {
+        font-size: 14px;
+        margin-top: 0%;
+      }
+
+      .enter__button:hover {
+        padding: 12px 35px;
+        border: solid 4px yellow;
+        color: #fff;
+        font-size: 14px;
+        margin-top: 0%;
+      }
+
       .login__button {
-        display: inline-block;
-        width: 100%;
-        margin: 0;
         padding: 10px;
         color: yellow;
-        font-size: 22px;
-        text-decoration: none;
-        border: solid 2px #fff;
-        margin-bottom: 3%;
-        background: none;
-        border-radius: 15px 50px;
+        font-size: 16px;
+        margin-bottom: 2%;
       }
+      .login__button:hover {
+        color: white;
+        font-size: 16px;
+        border: solid 2px #yellow;
+        margin-bottom: 2%;
+      }
+
+      .ticket-input-size{
+        font-size: 18px;
+        height: 38px;
+      }
+
+      .modal-header .close {
+        margin-top: -89px;
+        margin-right: 6px;
+      }
+
+      .yellow{
+        color: #ffffff;
+        border: 2px solid rgb(253, 240, 45);
+        background: none;
+        float: none !important;
+      }
+
+      .yellow:hover{
+        border: 2px solid #fff;
+        color: yellow;
+        background: none;
+        float: none !important;
+
+      }
+
+
     }
 
     @media only screen and (min-width: 360px) and (max-width: 767px) {
       /* For portrait layouts only */
       .login__button {
-        display: inline-block;
-        width: 100%;
-        margin: 0;
         padding: 10px;
         color: yellow;
-        font-size: 22px;
-        text-decoration: none;
-        border: solid 2px #fff;
-        margin-bottom: 3%;
+        font-size: 16px;
+        margin-bottom: 2%;
+      }
+
+      .pull-btn{
+        text-align: center;
+      }
+
+      .landing-msg{
+        font-size: 14px;
+      }
+
+      .landing-icon{
+        width: 70px;
+      }
+
+      .login__button:hover {
+        color: white;
+        font-size: 16px;
+        border: solid 2px #yellow;
+        margin-bottom: 2%;
+      }
+
+      .content__wy {
+        padding: 12px 30px;
+        color: yellow;
+        font-size: 16px;
+        margin-bottom: 2%;
         background: none;
-        border-radius: 15px 50px;
+        border-radius: 50px 15px;
+        margin-top: 2%;
+      }
+
+      .content__wy:hover {
+        padding: 12px 30px;
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 2%;
+        border-radius: 50px 15px;
+        margin-top: 2%;
+      }
+
+      .enter__button {
+        font-size: 14px;
+        margin-top: 0%;
+      }
+
+      .enter__button:hover {
+        padding: 12px 35px;
+        border: solid 4px yellow;
+        color: #fff;
+        font-size: 14px;
+        margin-top: 0%;
       }
     }
 
-    @media only screen and (min-width: 768px) and (max-width: 1366px) {
+    @media only screen and (min-width: 768px) and (max-width: 919px) {
         /* For portrait layouts only */
-       .marggin__teaser {
+      .marggin__teaser {
         margin-top: 20px;
         margin-bottom: 20px;
         padding-left: 10px;
         padding-right: 10px;
       }
 
-        .margin__row{
-      margin-top: 33px;
-      margin-bottom: 25px;
+      .margin__row{
+        margin-top: 33px;
+        margin-bottom: 25px;
+      }
 
+      .enter__button {
+        font-size: 14px;
+        margin-top: 0%;
+      }
+
+      .enter__button:hover {
+        padding: 12px 35px;
+        border: solid 4px yellow;
+        color: #fff;
+        font-size: 14px;
+        margin-top: 0%;
+      }
+    }
+
+    @media only screen and (min-width: 920px) and (max-width: 1279px) {
+
+      .enter__button {
+        font-size: 14px;
+        margin-top: 0%;
+      }
+
+      .enter__button:hover {
+        padding: 12px 35px;
+        border: solid 4px yellow;
+        color: #fff;
+        font-size: 14px;
+        margin-top: 0%;
       }
     }
 
@@ -251,10 +675,9 @@ body {
         padding-right: 10px;
       }
 
-        .margin__row{
-      margin-top: 33px;
-      margin-bottom: 25px;
-
+      .margin__row{
+        margin-top: 33px;
+        margin-bottom: 25px;
       }
     }
 
