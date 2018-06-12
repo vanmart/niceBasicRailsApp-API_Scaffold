@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.5.1'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -72,6 +73,19 @@ gem 'cancancan'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# API authentication
+gem 'doorkeeper'
+gem 'doorkeeper-i18n'
+gem 'rack-oauth2'
+
+
+# API
+group :api do
+  gem 'grape'
+  gem 'grape-entity'
+  gem 'rack-cors', :require => 'rack/cors'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
